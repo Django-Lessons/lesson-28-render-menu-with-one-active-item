@@ -1,0 +1,28 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'land/bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'land/bootstrap/js/jquery-3.2.1.slim.min.js' %}" ></script>
+    <script src="{% static 'land/bootstrap/js/popper.min.js' %}"></script>
+    <script src="{% static 'land/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <title>Docstore</title>
+  </head>
+  <body>
+    <!-- Navigation bar BEGIN-->
+    {% include 'land/nav.html' %}
+    <!-- Navigation bar END -->
+
+    <main role="main" class="container my-3">
+      {% block central_content %}
+      {% endblock central_content %}
+    </main><!-- /.container -->
+
+  </body>
+</html>
